@@ -92,6 +92,7 @@ onSignup() {
           this.signupform.reset();
           this.router.navigate(['login']);
         },
+      
         (error) => {
           if (error.status === 400) {
             if (error.error && error.error.message === "User with the same email already exists") {
@@ -106,6 +107,7 @@ onSignup() {
           } else {
             alert("An error occurred. Please try again.");
           }
+<<<<<<< HEAD
 
           // if (error.status === 400 && error.error && error.error.message === "User with the same name already exists") {
           //   alert("User with the same name already exists. Please provide a different name.");
@@ -114,6 +116,13 @@ onSignup() {
           // }
           //this.toast.error({ detail: "Error", summary: "You are not registered", duration: 5000 });
         }
+=======
+          // this.toast.error({ detail: "Error", summary: "You are not registered", duration: 5000 });
+         }
+
+        
+
+>>>>>>> cdf5549865818deb60cbe355c4e956caae23e166
       );
   }
   else{
