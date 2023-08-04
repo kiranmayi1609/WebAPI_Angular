@@ -102,7 +102,7 @@ onSignup() {
             } else if (error.error && error.error.message === "Password does not meet the requirements. It should have at least 5 characters, including uppercase, lowercase, and a digit.") {
               alert("Password does not meet the requirements. It should have at least 5 characters, including uppercase, lowercase, and a digit.");
             } else  {
-              alert("eMAIL IS NOT VALID ");
+              alert("Email is not valid  ");
             }
           } else {
             alert("An error occurred. Please try again.");
